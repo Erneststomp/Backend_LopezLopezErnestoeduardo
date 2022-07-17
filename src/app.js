@@ -34,4 +34,4 @@ app.get('/productoRandom', async (req, res) => {
     const allCharacters = await Contenedor.getAll()
     const randomCharacter = Math.floor(Math.random() * allCharacters.length )
     res.send(allCharacters[randomCharacter])
-})
+})  
